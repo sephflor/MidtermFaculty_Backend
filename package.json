@@ -1,0 +1,30 @@
+{
+  "name": "faculty-api",
+  "version": "1.0.0",
+  "description": "Faculty Management System REST API",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "lint:openapi": "redocly lint server/openapi.yaml"
+  },
+  "keywords": [
+    "faculty",
+    "management",
+    "api",
+    "express",
+    "openapi",
+    "swagger"
+  ],
+  "author": "Faculty Management System Group",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@redocly/cli": "^2.11.1"
+  }
+}
